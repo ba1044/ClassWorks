@@ -1,1 +1,3 @@
-# ClassWorks
+To explore latency of a simple request/response interaction implemented using various of protocols and running over links with different latencies. The system consists of a client requesting a simple piece of information from a server, the server responds with the information, the client receives it, and measures, as precisely as possible, the time the entire transaction took.
+
+Experiment with four protocols: raw data over UDP, raw data over TCP, HTTP, and HTTPS. To make it slightly more complicated, all protocols must run over IPv6. Both request and response should be few tens of bytes in length. For the UDP and TCP experiments, you need to write both client and server side, for the HTTP/HTTPS experiments, you are expected to use the Apache web server running on the machines described below and just write the client making the requests.
